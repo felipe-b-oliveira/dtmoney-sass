@@ -2,9 +2,8 @@ import {useState} from "react";
 import {Header} from "./components/Header";
 import {Dashboard} from "./components/Dashboard";
 import {NewTransactionModal} from "./components/NewTransactionModal";
-
-import "./styles/global.scss";
 import {TransactionsProvider} from "./hooks/useTransactions";
+import "./styles/global.scss";
 
 /**
 * Author: Felipe Oliveira
