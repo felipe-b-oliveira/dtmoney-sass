@@ -1,16 +1,16 @@
-import styled from "styled-components";
+@import '../../styles/colors.scss';
 
-export const Container = styled.div `
+.summary__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: -10rem;
 
     div {
-        background: var(--shape);
+        background: $shape;
         padding: 1.5rem 2rem;
         border-radius: 0.25rem;
-        color: var(--text-title);
+        color: $text-title;
 
         header {
             display: flex;
@@ -27,8 +27,8 @@ export const Container = styled.div `
         }
 
         &.highlight-background {
-            background: var(--green);
+            background: $green;
             color: #fff;
         }
     }
-`;
+}

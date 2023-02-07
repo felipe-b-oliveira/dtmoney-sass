@@ -3,7 +3,7 @@ import incomeImg from "../../assets/income.svg";
 import outcomeImg from "../../assets/outcome.svg";
 import totalImg from "../../assets/total.svg";
 
-import {Container} from "./styles";
+import "./styles.scss";
 
 const FILE_NAME = 'Summary';
 export function Summary() {
@@ -29,7 +29,7 @@ export function Summary() {
     })
 
     return (
-        <Container>
+        <div className="summary__container">
             <div>
                 <header>
                     <p>Entradas</p>
@@ -67,6 +67,6 @@ export function Summary() {
                     }).format(summary.total)}
                 </strong>
             </div>
-        </Container>
+        </div>
     );
 }
