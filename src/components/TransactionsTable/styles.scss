@@ -1,6 +1,6 @@
-import styled from "styled-components";
+@import '../../styles/colors.scss';
 
-export const Container = styled.div `
+.transactions-table__container {
     margin-top: 4rem;
 
     table {
@@ -16,23 +16,27 @@ export const Container = styled.div `
         line-height: 1.5rem;
     }
 
+    tr {
+        margin-bottom: 12rem;
+    }
+
     td {
         padding: 1rem 2rem;
         border: 0;
-        background: var(--shape);
-        color: var(--text-body);
+        background: $shape;
+        color: $text-body;
         border-radius: 0.25rem;
 
         &:first-child {
-            color: var(--text-title);
+            color: $text-title;
         }
 
         &.deposit {
-            color: var(--green);
+            color: $green;
         }
 
         &.withdraw {
-            color: var(--red);
+            color: $red;
         }
     }
-`;
+}

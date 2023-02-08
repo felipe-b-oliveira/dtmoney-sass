@@ -1,5 +1,5 @@
 import {useTransactions} from "../../hooks/useTransactions";
-import {Container} from "./styles";
+import "./styles.scss";
 
 const FILE_NAME = 'TransactionsTable';
 export function TransactionsTable() {
@@ -8,7 +8,7 @@ export function TransactionsTable() {
     console.log(`${FILE_NAME}::transactions`, transactions);
 
     return (
-        <Container>
+        <div className="transactions-table__container">
             <table>
                 <thead>
                     <tr>
@@ -39,6 +39,6 @@ export function TransactionsTable() {
                     ))}
                 </tbody>
             </table>
-        </Container>
+        </div>
     );
 }
