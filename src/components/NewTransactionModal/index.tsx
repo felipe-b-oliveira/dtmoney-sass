@@ -7,7 +7,11 @@ import closeImg from "../../assets/close.svg";
 import incomeImg from "../../assets/income.svg";
 import outcomeImg from "../../assets/outcome.svg";
 
-import {Container, TransactionTypeContainer, RadioBox} from "./styles";
+/**
+* Author: Felipe Oliveira
+* Annotation: Div could be transformed into new components with these names.
+*/ 
+// import {Container, TransactionTypeContainer, RadioBox} from "./styles";
 import "./styles.scss";
 
 Modal.setAppElement('#root');
